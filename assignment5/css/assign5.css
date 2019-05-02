@@ -1,0 +1,167 @@
+/*********************************************************************************
+*
+* WEB222 – Assignment #5
+*
+* I declare that this assignment is my own work in accordance with Seneca
+* Academic Policy. No part of this assignment has been copied manually or
+* electronically from any other source (including web sites) or distributed to
+* other students.
+*
+* Name: Gayane Babayan   Student ID: 107-061-160    Date: 09-April-2017
+*
+********************************************************************************/
+
+/* >>> Adjustment the form's look <<< */
+body {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 1.5%;
+    box-shadow: 0px 1px 6px 3px #918f91;
+    border-radius: 0.5em;
+}
+
+/* >>> Adjustment for the form's header <<< */
+header {
+    background-color: red;
+    color: white;
+    margin-top: 1.5%;
+    padding-top: 1px;
+    padding-left: 1%;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    font-size: 20px;
+}
+
+/* >>> Adjustment for the title ending part on the header <<< */
+.header-title {
+    color: white;
+    font-size: 25px;
+}
+
+/* >>> Adjustment for the whole form's shape <<< */
+.main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* >>> Adjustment for the required information bellow the title <<< */
+h4.main {
+    color: red;
+}
+
+/* >>>  Adjustments for the input fields <<< */
+input {
+    width: 300px;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 0.2em;
+    border-width: 1px;
+    box-shadow: 6px 5px 7px -2px #918f91;
+}
+
+/* >>>  Adjustments for the fields' names <<< */
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+}
+
+/* >>>  Adjustments for the dropbox field <<< */
+select {
+    width: 300px;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 0.2em;
+    border-width: 1px;
+    box-shadow: 6px 5px 7px -2px #918f91;
+}
+
+/* >>>  Adjustments for the 4 sections of the form <<< */
+fieldset {
+    background-color: #e6e6e6;
+    border-color: transparent;
+}
+
+/* >>>   subfieldset settings   <<< */
+.subfield {
+    background-color: white; 
+    margin: 0 25%;
+    width: 270px;
+    border: 1px solid #b3b3b3;
+    border-radius: 0.3em;
+    text-align: left;
+}
+
+/* >>>  Adjustments for the 4 sections' subtitles <<< */
+fieldset p {   
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #cccccc;
+    height: 28px;
+    width: 103%;
+    margin-left: -1.5%;
+    margin-top: -1%;
+}
+
+/* >>>  Adjustments for the * for required fields <<< */
+div span {
+    color: red;
+}
+
+/* >>>  Adjustments for the radio button directed to the right <<< */
+input.radio_label {
+    float: left;
+    clear: none;
+}
+
+/* >>>  Align the points inside the radio options  <<< */
+.radio_list {
+    text-align: left;
+    margin-left: 15px;
+}
+
+/* >>> Adjustments for the radio button field's margin/padding <<< */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+/* >>>   Textarea Features    <<< */
+textarea {
+    border-radius: 0.2em;
+    box-shadow: 6px 5px 7px -2px #918f91;
+    vertical-align: top;
+    width: 35.5%;
+}
+
+/* >>>   Attachement File's Adjustments   <<< */
+input[type = "file"], [type = "radio"] {
+    width: auto;
+    border: none;
+    background-color: white;
+    box-shadow: 6px 5px 7px -2px #918f91;
+}
+
+/* >>> Submit and Reset Buttons' Adjustments  <<< */
+input[type = "submit"], [type = "reset"] {
+    width: 90px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+/* >>> Adjustment for the Error messages  <<< */
+.error {
+    color: black;
+    font-size: 12px;
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+    margin-left: 25%;
+    margin-top: 0.3em;
+    margin-bottom: 0.9em;
+}

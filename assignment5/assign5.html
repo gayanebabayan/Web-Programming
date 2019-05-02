@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="css/assign5.css" />
+        <script src = "js/assign5.js"> </script>
+    </head>
+
+    <body>   
+        <div class = "main1">
+            <header>
+                <h1 class = "form-title">
+                    JobSearch.<span class = "header-title">com</span>
+                </h1>
+            </header>
+        </div>
+
+        <h2 class="main"> Create Your Account </h2> <br/>
+        <h4 class="main"> *Required information </h4> <br/>
+        
+        
+        <form class= "main"
+              id= "form1" 
+              name= "form1" 
+              action= "https://httpbin.org/post"
+              method= "post" 
+              onsubmit= "return formValidation();">
+         
+          <fieldset>
+              <p> Basic Information </p>
+              <br>
+              <div> 
+                  <label for = "email"> Email <span>*</span></label>
+                  <input type = "email" name = "e_mail" id = "email" autofocus = "autofocus" required = "required"/> 
+                  <br/> <br>
+              </div>
+              <div>
+                  <label for = "password1"> Password <span>*</span> </label>
+                  <input type = "password" name = "password1" id = "password1" required = "required" onchange="validatePassword1();"/>
+                  <div id = "err-pass1" class = "error"> </div> 
+                  <br/>
+              </div>
+              <div>
+                  <label for = "password2"> Retype Password <span>*</span> </label>
+                  <input type = "password" name = "password2" id = "password2" required = "required" onchange="validatePassword2();"/>
+                  <div id = "err-pass2" class = "error"> </div> 
+                  <br/> 
+              </div>
+              <div>
+                  <label for = "fName"> First Name <span>*</span> </label>   
+                  <input type = "text" name = "fName" id = "fName" required = "required" onchange="validateFirstName();"/>
+                  <div id = "err-fName" class = "error"> </div> 
+                  <br/>
+              </div>
+              <div>
+                  <label for = "lName"> Last Name <span>*</span> </label>
+                  <input type = "text" name = "lName" id = "lName" required = "required" onchange="validateLastName();"/>
+                  <div id = "err-lName" class = "error"> </div> 
+                  <br/>
+              </div>
+              <div>
+                  <label for = "phone"> Phone Number <span>*</span> </label>
+                  <input  type = "tel" name = "phone" id = "phone" required = "required" placeholder=" 999-999-9999 " onchange="validatePhoneNumber();"/>
+                  <div id = "err-phone" class = "error"> </div> 
+                  <br/>
+              </div>
+              <div>
+                  <label for = "address"> Address <span>*</span> </label>
+                  <input type = "text" name = "address" id = "address" required = "required"/> 
+                  <br/> <br>
+              </div>
+              <div>
+                  <label for = "city"> City <span>*</span> </label>
+                  <input type = "text" name = "city" id = "city" required = "required"/> 
+                  <br/> <br>
+              </div>
+              <div>
+                  <label for = "province"> Province <span>*</span> </label>
+                  <select name = "province" id = "province" required = "required" size = "1">
+                      <option value = "" disabled = "disabled"> Province / Territories </option>
+                      <optgroup label = "Provinces">
+                          <option value = "ON"> Ontario </option>
+                          <option value = "QC"> Quebec </option>
+                          <option value = "NS"> Nova Scotia </option>
+                          <option value = "NB"> New Brunswick </option>
+                          <option value = "MB"> Manitoba </option>
+                          <option value = "BC"> British Colombia </option>
+                          <option value = "PE"> Prince Edward Island </option>
+                          <option value = "SK"> Saskatchewan </option>
+                          <option value = "AB"> Alberta </option>
+                          <option value = "NL"> Newfoundland and Labrador </option>
+                      </optgroup>
+                      <optgroup label = "Territories">
+                          <option value = "NT"> Northwest Territories </option>
+                          <option value = "NU"> Nunavut </option>
+                          <option value = "YT"> Yukon </option>
+                      </optgroup>
+                  </select>
+                  <br> <br>
+              </div>
+              <div>
+                  <label for = "country"> Country <span>*</span> </label>
+                  <input type = "text" list = "countryList" name = "country" id = "country" required = "required"/>
+                  <datalist id = "countryList">
+                      <option value = "Canada"> Canada </option>
+                      <option value = "The United States"> The United States </option>
+                      <option value = "Sweden"> Sweden </option>
+                      <option value = "France"> France </option>
+                      <option value = "Armenia"> Armenia </option>
+                  </datalist>                 
+                  <br/> <br>
+              </div>
+          </fieldset>
+          <br/> <br>
+          <fieldset>
+              <p> Education </p>
+              <br>
+              <div> 
+                  <label for = "school"> School <span>*</span></label>
+                  <input type = "text" name = "school" id = "school" required = "required"/> 
+                  <br/> <br>
+              </div>
+              <div>
+                  <label for = "program"> Program <span>*</span> </label>   
+                  <input type = "text" name = "program" id = "program" required = "required"/> 
+                  <br/> <br>
+              </div>              
+              <div>
+                  <label for = "eduLevel"> Education Level <span>*</span> </label>
+                  <select name = "eduLevel" id = "eduLevel" size="1" required = "required" >
+                      <option value = "" disabled = "disabled" selected = "selected"> -select- </option>
+                      <option value = "techDip"> Technical Diploma </option>
+                      <option value = "collDip"> College Diploma </option>
+                      <option value = "bachDeg"> Bachelor's Degree </option>
+                      <option value = "masDeg"> Master's Degree </option>
+                      <option value = "other"> Other </option>
+                  </select>
+                  <br> <br>
+              </div>
+
+              <fieldset class = "subfield">
+                  <legend>  Educaton Status  </legend>
+                  <ul>
+                      <li>
+                          <label class = "radio_list" for = "radiogroup1"> Graduate </label>
+                              <input class = "radio_label" type = "radio" id = "radiogroup1" name = "status" value = "graduate" onchange="validateEduStatus();"/>      
+                      </li>
+                      <li>
+                          <label class = "radio_list" for = "radiogroup2"> Current Enrolled </label>
+                              <input class = "radio_label" type = "radio" id = "radiogroup2" name = "status" value = "current" onchange="validateEduStatus();"/>
+                      </li>
+                      <li>
+                          <label class = "radio_list" for = "radiogroup3"> Did Not Graduate </label>
+                              <input class = "radio_label" type = "radio" id = "radiogroup3" name = "status" value = "notGraduate" onchange="validateEduStatus();"/>
+                      </li>
+                  </ul>
+              </fieldset>
+              <div id = "err-EduStatus" class = "error"> </div>
+              <br>
+              <div>
+                  <label for = "graduDate"> Graduation Date <span>*</span> </label>   
+                  <input type = "text" name = "graduDate" id = "graduDate" required = "required"/> 
+                  <br/> <br>
+              </div>
+          </fieldset>
+          <br/> <br>
+          <fieldset>
+              <p> Work Experience </p>
+              <br>
+              <div>
+                  <label for = "employer"> Employer: </label>   
+                  <input type = "text" name = "employer" id = "employer"/> 
+                  <br/> <br>
+              </div>
+              <div>
+                  <label for = "jobTitle"> Job Title: </label>
+                  <input type = "text" name = "jobTitle" id = "jobTitle"/> 
+                  <br/> <br>
+              </div>
+              <div>
+                  <label for = "jobDuty"> Job Duty: </label>
+                  <textarea name = "jobDuty" id = "jobDuty" cols = "35" rows = "5">
+                  </textarea>
+                  <br/> <br>
+              </div>
+              <div>
+                  <label for = "workYear"> Worked Year: </label>
+                  <input type = "number" name = "workYear" id = "workYear" min = "1" max = "20"/> 
+                  <br/> <br>
+              </div>
+          </fieldset>
+          <br/> <br>
+
+          <fieldset>
+              <p> Attachements </p>
+              <br>
+              <div>
+                  <label for = "attach"> Attachements: </label>   
+                  <input type = "file" name = "attach" id = "attach" multiple /> 
+                  <br/> <br>
+              </div>
+          </fieldset>
+          <br/> <br>
+          <div style="text-align: center">
+              <input type= "reset" value= "Reset"/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              <input type= "submit" value= "Apply"/>
+          </div>
+          <br>
+        </form>
+    </body>
+</html>
