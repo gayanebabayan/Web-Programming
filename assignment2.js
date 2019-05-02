@@ -135,7 +135,7 @@ var CustomerDB = {
    outputAllAddresses(){
       console.log ("All Addresses\n");
       for (var i = 0; i < this.addresses.length; i++){
-         console.log("Address " + this.addresses[i].address_id + ": ");  // ?? how can I output on 1 line
+         console.log("Address " + this.addresses[i].address_id + ": ");  
          this.getAddressById(this.addresses[i].address_id);   
       }
    },
