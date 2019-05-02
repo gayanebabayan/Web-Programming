@@ -1,0 +1,115 @@
+/*********************************************************************************
+*
+* WEB222 – Assignment #4b
+*
+* I declare that this assignment is my own work in accordance with Seneca
+* Academic Policy. No part of this assignment has been copied manually or
+* electronically from any other source (including web sites) or distributed to
+* other students.
+*
+* Name: Gayane Babayan   Student ID: 107-061-160    Date: 24-March-2017
+*
+********************************************************************************/
+
+
+
+/*adjust all elements with the class main-containter with appropriate width and margin*/
+.main-container{
+  margin: 0 auto;
+  width: 960px; 
+}
+
+/*select all <nav> elements that are a child of the element with the class "main-container" and adjust its width and float*/
+.main-container nav{
+  width: 30%;
+  float: left;    
+}
+
+/*select all elements with the class "main" that are a child of the element with the "main-container" class and adjust its width and float*/
+.main-container .main{
+  width: 70%;
+  float: right;
+}
+
+/*select all <header> elements that are a child of the element with the class "main-container" and adjust its padding, background-color, border-bottom 
+  and margin-bottom appropriately*/
+.main-container header {
+    padding: 10px;
+    background-color: #eeeeee;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 30px;
+}
+
+/*select all h1 elements under <header> elements that are a child of the element with the class "main-container" and adjust its features appropriatelly*/
+.main-container header h1 {
+    width: 70%;
+    font-size: 24px;
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/*select the <footer> elements that is a child of the element with the class "main-container" and adjust its features appropriatelly*/
+.main-container footer {
+    clear: both;
+    padding: 20px 10px;
+    background-color: #eeeeee;
+    border-top: 1px solid #cccccc;
+    font-size: 13px;
+}
+
+/*adjust the features of the appropriate element whose id is "logo"*/
+#logo {
+    width: 30%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*select all the img elements that are within the element with the id "logo" and adjust the features appropriately*/
+#logo img {
+    width: 94px;
+    vertical-align: middle;
+}
+
+/*select all ul element which are inside the nav element and adjust its features appropriately*/
+nav ul {
+    list-style-type: none;
+}
+
+/*select all a tags under ul elements which are within the nav element and make appropriate adjustments*/
+nav ul a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/*select all div elements with the class "province and adjust the features appropriately"*/
+div.province {
+    width: 30%;
+    float: left;
+    margin: 8px;
+    height: 310px;
+}
+
+/*select all elements with the class "description" within div, which has class "province" and adjust its features appropriately */
+div.province.description {
+    max-height: 165px;
+    overflow-y: auto;
+    overflow-x: auto;
+    margin: 8px 0;
+}
+
+/*select all a tags within the div which has class "province" and adjust appropriate features*/
+div.province a {
+    display: block;
+    text-align: center;
+    background-color: #555555;
+    color: #eeeeee;
+    text-decoration: none; 
+    padding: 5px;
+}
+
+/*select all images with the class flag and adjust its features appropriately*/
+img.flag {
+    width: 100%;
+}
